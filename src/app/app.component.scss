@@ -1,0 +1,51 @@
+body {
+  background-color: #111D25;
+  color: #ACB5BD;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.bg-dark {
+  background-color: #1E2A32!important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ACB5BD;
+}
+
+.user-selector {
+  background-color: #3D505D;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.user-selector img, #lista-usuarios img{
+  width: 35px;
+  height: 35px;
+}
+
+.menu-option {
+  color: #ACB5BD;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.menu-option.activo {
+  color: #16AC95;
+  border-bottom: 3px solid #16AC95;
+}
+
+#lista-usuarios {
+  background-color: #3D505D;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 10px;
+}

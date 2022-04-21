@@ -1,5 +1,24 @@
-<button class="btn btn-primary">
-  <fa-icon [icon]="faCake" ></fa-icon>
-</button>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Whatsapp</span>
+    <div class="user-selector" (click)="showUsers = !showUsers">
+      <img src="../assets/img/profile-pics/goku.jpg" class="rounded-circle">
+    </div>
+  </div>
+  <div *ngIf="showUsers" id="lista-usuarios" class="container-fluid">
+    <div class="small">Seleccione un usuario</div>
+    <div class="row" id="usuarios">
+      <app-users-list></app-users-list>
+    </div>
+  </div>
+  <div class="mt-3">
+    <a routerLink="" class="menu-option">
+      Chat
+    </a>
+    <a routerLink="contact-list" class="menu-option">
+      Contactos
+    </a>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
